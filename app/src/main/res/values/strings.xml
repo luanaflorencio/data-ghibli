@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">data-ghibli</string>
+    <string name="textoInicial">Olá, Bem-vindo ao Data Ghibli, aqui você pode pegar informações dos seus filmes favoritos do estúdio e navegar por esse mundo fantástico.</string>
 </resources>
