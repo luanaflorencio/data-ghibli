@@ -7,4 +7,7 @@
     <string name="search">Pesquisar</string>
     <string name="movies">FILMES</string>
     <string name="chars">PERSONAGENS</string>
+    <string name="charimage">CharImage</string>
+    <string name="totoro">Totoro</string>
+    <string name="satsuki">Satsuki Kusakabe</string>
 </resources>
