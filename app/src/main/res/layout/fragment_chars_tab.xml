@@ -17,23 +17,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/charImg1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_margin="8dp"
         android:adjustViewBounds="true"
         android:maxHeight="350dp"
         android:maxWidth="350dp"
         android:scaleType="fitCenter"
-        android:contentDescription="@string/charimage"
+        android:contentDescription="@string/totoro"
+        android:src="@drawable/char_totoro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/charText1"
-        tools:ignore="ImageContrastCheck"
-        tools:src="@drawable/Totoro" />
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/charText2"
@@ -46,21 +45,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/charImg1" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/charImg2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_margin="8dp"
         android:adjustViewBounds="true"
         android:maxHeight="350dp"
         android:maxWidth="350dp"
         android:scaleType="fitCenter"
-        android:contentDescription="@string/charimage"
+        android:contentDescription="@string/satsuki"
+        android:src="@drawable/char_satsuki"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/charText2"
-        tools:ignore="ImageContrastCheck"
-        tools:src="@drawable/Satsuki" />
+        tools:ignore="ImageContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

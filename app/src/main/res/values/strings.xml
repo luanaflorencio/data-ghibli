@@ -7,7 +7,8 @@
     <string name="search">Pesquisar</string>
     <string name="movies">FILMES</string>
     <string name="chars">PERSONAGENS</string>
-    <string name="charimage">CharImage</string>
     <string name="totoro">Totoro</string>
     <string name="satsuki">Satsuki Kusakabe</string>
+    <string name="ponyo">Ponyo</string>
+    <string name="mononoke">Princesa Mononoke</string>
 </resources>

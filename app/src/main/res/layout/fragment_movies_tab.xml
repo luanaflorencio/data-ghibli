@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MoviesTabFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/movies"
-        android:gravity="center"/>
+    <ImageButton
+        android:id="@+id/btn_mv_totoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/totoro"
+        android:maxWidth="350dp"
+        android:maxHeight="275dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/movie_totoro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <ImageButton
+        android:id="@+id/btn_mv_ponyo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/ponyo"
+        android:maxWidth="350dp"
+        android:maxHeight="275dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/movie_ponyo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_mv_totoro" />
+
+    <ImageButton
+        android:id="@+id/btn_mv_mononoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="350dp"
+        android:maxHeight="275dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/movie_mononoke"
+        android:contentDescription="@string/mononoke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_mv_ponyo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
