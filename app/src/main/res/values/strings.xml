@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">data-ghibli</string>
-    <string name="txtTitleText">Data Ghibli</string>
-    <string name="txtWelcomeText">Olá, Bem-vindo ao Data Ghibli, aqui você pode pegar informações dos seus filmes favoritos do estúdio e navegar por esse mundo fantástico.</string>
+    <string name="app_name">AnimeFun</string>
+    <string name="txtTitleText">AnimeFun</string>
+    <string name="txtWelcomeText">Aventure-se pelo mundo e pesquise seus animes favoritos!</string>
     <string name="btnCatalogText">Pesquisar catalogo</string>
     <string name="edtSearchHint">Digite um filme/personagem..</string>
     <string name="search">Pesquisar</string>
