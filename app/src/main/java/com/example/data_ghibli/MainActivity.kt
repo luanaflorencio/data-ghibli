@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.seeCatalog.setOnClickListener {
-            val intentGoToCatalog = Intent(this, MovieListActivity::class.java)
+            val intentGoToCatalog = Intent(this, ListActivity::class.java)
             startActivity(intentGoToCatalog)
         }
 

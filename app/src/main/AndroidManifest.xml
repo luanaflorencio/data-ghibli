@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Dataghibli"
         tools:targetApi="31">
         <activity
-            android:name=".MovieListActivity"
+            android:name=".ListActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

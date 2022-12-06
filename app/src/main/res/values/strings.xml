@@ -3,12 +3,12 @@
     <string name="txtTitleText">AnimeFun</string>
     <string name="txtWelcomeText">Aventure-se pelo mundo e pesquise seus animes favoritos!</string>
     <string name="btnCatalogText">Pesquisar catalogo</string>
-    <string name="edtSearchHint">Digite um filme/personagem..</string>
-    <string name="search">Pesquisar</string>
-    <string name="movies">FILMES</string>
-    <string name="chars">PERSONAGENS</string>
-    <string name="totoro">Totoro</string>
-    <string name="satsuki">Satsuki Kusakabe</string>
-    <string name="ponyo">Ponyo</string>
-    <string name="mononoke">Princesa Mononoke</string>
+    <string name="imagens">IMAGENS</string>
+    <string name="gifs">GIFS</string>
+    <string name="husbando1">husbando1</string>
+    <string name="husbando2">husbando2</string>
+    <string name="husbando3">husbando3</string>
+    <string name="husbando4">husbando4</string>
+    <string name="husbando5">husbando5</string>
+    <string name="husbando6">husbando6</string>
 </resources>
