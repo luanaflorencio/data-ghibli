@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:flexWrap="wrap"
+    app:flexDirection="row"
+    tools:context=".ImagesTabFragment">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_flexGrow="2"
+        android:adjustViewBounds="true"
+        android:maxHeight="250dp"
+        tools:src="@drawable/gif1" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="250dp"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@drawable/gif2" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="250dp"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@drawable/gif3" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="250dp"
+        tools:src="@drawable/gif4" />
+</com.google.android.flexbox.FlexboxLayout>

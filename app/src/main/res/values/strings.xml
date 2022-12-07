@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">data-ghibli</string>
+    <string name="app_name">AnimeFun</string>
+    <string name="title_text">AnimeFun</string>
+    <string name="welcome_phrase">Aventure-se pelo mundo e pesquise seus animes favoritos!</string>
+    <string name="search_catalog">Pesquisar catalogo</string>
+    <string name="images">IMAGENS</string>
+    <string name="gifs">GIFS</string>
+    <string name="husbando1">husbando</string>
+    <string name="husbando2">husbando2</string>
+    <string name="husbando3">husbando3</string>
+    <string name="husbando4">husbando4</string>
+    <string name="husbando5">husbando5</string>
+    <string name="husbando6">husbando6</string>
+    <string name="more_content">Mais Conteúdo</string>
 </resources>

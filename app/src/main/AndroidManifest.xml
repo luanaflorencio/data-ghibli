@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Dataghibli"
         tools:targetApi="31">
         <activity
-            android:name=".ListAnimeActivity"
+            android:name=".ListActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -21,7 +21,8 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

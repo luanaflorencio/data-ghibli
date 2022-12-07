@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:flexWrap="wrap"
+    app:flexDirection="row"
+    tools:context=".ImagesTabFragment">
+
+    <ImageView
+        android:id="@+id/husbando1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_flexGrow="2"
+        android:adjustViewBounds="true"
+        android:maxHeight="300dp"
+        tools:src="@drawable/husbando1"
+        android:contentDescription="@string/husbando1" />
+
+    <ImageView
+        android:id="@+id/husbando2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="300dp"
+        tools:src="@drawable/husbando2"
+        android:contentDescription="@string/husbando2" />
+
+    <ImageView
+        android:id="@+id/husbando3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="300dp"
+        tools:src="@drawable/husbando3"
+        android:contentDescription="@string/husbando3" />
+
+    <ImageView
+        android:id="@+id/husbando4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="300dp"
+        tools:src="@drawable/husbando4"
+        android:contentDescription="@string/husbando4" />
+
+    <ImageView
+        android:id="@+id/husbando5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="300dp"
+        tools:src="@drawable/husbando5"
+        android:contentDescription="@string/husbando5" />
+
+    <ImageView
+        android:id="@+id/husbando6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="300dp"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@drawable/husbando6"
+        android:contentDescription="@string/husbando6" />
+</com.google.android.flexbox.FlexboxLayout>

@@ -7,12 +7,57 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_black"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        android:text="@string/title_text"
+        android:textColor="@color/green_fern"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        android:text="@string/welcome_phrase"
+        android:textColor="#FAFAFA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <Button
+        android:id="@+id/seeCatalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="261dp"
+        android:backgroundTint="@color/green_fern"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#FFFFFF"
+        android:shadowColor="@color/black"
+        android:shadowDx ="0"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        android:text="@string/search_catalog"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
