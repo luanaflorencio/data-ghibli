@@ -2,11 +2,12 @@ package com.example.data_ghibli
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import androidx.viewpager2.widget.ViewPager2
+import android.view.View
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.data_ghibli.databinding.ActivityListBinding
-import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class ListActivity : AppCompatActivity() {
 
@@ -17,24 +18,26 @@ class ListActivity : AppCompatActivity() {
         binding = ActivityListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val viewPager: ViewPager2 = binding.pager
-        val tabLayout: TabLayout = binding.tabLayout
-
-        val fragments: ArrayList<Fragment> = arrayListOf(
-            ImagesTabFragment(),
-            GifsTabFragment()
-        )
-
-        val adapter = ViewHolderAdapter(fragments, this)
-        viewPager.adapter = adapter
-
-        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            if (position == 0) {
-                tab.text = getString(R.string.images)
+        val call: Call<List<Images>>? = RetrofitClient.instance?.getApi()?.getHusbandos()
+        call?.enqueue(object: Callback<List<Images>> {
+            override fun onResponse(call: Call<List<Images>>,
+                                    response: Response<List<Images>>) {
+                if (response.isSuccessful) {
+                    response.body()?.let{
+                        binding.listImages.adapter = ImagesAdapter(it as ArrayList<Images>,
+                            this@ListActivity)
+                        binding.listImages.layoutManager = LinearLayoutManager(this@ListActivity)
+                        binding.progressBar.visibility = View.GONE
+                        binding.listImages.visibility = View.VISIBLE
+                    }
+                }
             }
-            if (position == 1) {
-                tab.text = getString(R.string.gifs)
+
+            override fun onFailure(call: Call<List<Images>>, t: Throwable) {
+                binding.progressBar.visibility = View.GONE
+                binding.errorMsg.text = "ERRO NA REQUISIÇÃO!"
+                binding.errorMsg.visibility = View.VISIBLE
             }
-        }.attach()
+        })
     }
 }
