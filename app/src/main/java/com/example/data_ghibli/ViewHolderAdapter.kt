@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class RecyclerViewAdapter(
+class ViewHolderAdapter(
     private val fragments: ArrayList<Fragment>,
     activity: AppCompatActivity
 ) : FragmentStateAdapter(activity) {

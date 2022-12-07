@@ -25,12 +25,12 @@ class ListActivity : AppCompatActivity() {
             GifsTabFragment()
         )
 
-        val adapter = RecyclerViewAdapter(fragments, this)
+        val adapter = ViewHolderAdapter(fragments, this)
         viewPager.adapter = adapter
 
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             if (position == 0) {
-                tab.text = getString(R.string.imagens)
+                tab.text = getString(R.string.images)
             }
             if (position == 1) {
                 tab.text = getString(R.string.gifs)
