@@ -24,8 +24,7 @@ class ListActivity : AppCompatActivity() {
                                     response: Response<List<Images>>) {
                 if (response.isSuccessful) {
                     response.body()?.let{
-                        binding.listImages.adapter = ImagesAdapter(it as ArrayList<Images>,
-                            this@ListActivity)
+                        binding.listImages.adapter = ImagesAdapter(it as ArrayList<Images>)
                         binding.listImages.layoutManager = LinearLayoutManager(this@ListActivity)
                         binding.progressBar.visibility = View.GONE
                         binding.listImages.visibility = View.VISIBLE
